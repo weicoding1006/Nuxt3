@@ -1,7 +1,8 @@
 <template>
     <div>
         <AppHeader></AppHeader>
-        <slot></slot>
-        <AppFooter></AppFooter>
+        <main class="container mx-auto">
+            <slot></slot>
+        </main>
     </div>
 </template>
