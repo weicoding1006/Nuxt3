@@ -17,7 +17,7 @@ export default defineNuxtRouteMiddleware((to, from) => {
       return navigateTo('/login');
     } else {
       // 每次導航時重置 token 過期時間
-      const newExpirationTime = new Date().getTime() + 300000 ; // 300 秒後過期
+      const newExpirationTime = new Date().getTime() + 3000000 ; // 3000 秒後過期
       localStorage.setItem('token_expiration', newExpirationTime);
     }
   }

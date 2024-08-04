@@ -39,7 +39,7 @@ async function login() {
     try {
         const res = await axios.post(apiUrl + `Login`, userInput);
         const { token } = res.data;
-        const expirationTime = new Date().getTime() + 300000 //300秒後過期
+        const expirationTime = new Date().getTime() + 3000000 //3000秒後過期
         // 將 token 存儲在 localStorage 中
         localStorage.setItem('token', token)
         localStorage.setItem('token_expiration',expirationTime);

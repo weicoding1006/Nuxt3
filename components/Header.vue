@@ -16,7 +16,7 @@
                     <li>
                         <button @click="logout" class="text-white">登出</button>
                     </li>
-                    <!-- <li class="text-white">剩餘時間: {{ remainingTime }} 秒</li> -->
+                    <li class="text-white">剩餘時間: {{ remainingTime }} 秒</li>
                 </ul>
             </nav>
         </div>
